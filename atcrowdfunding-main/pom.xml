@@ -1,0 +1,76 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>atcrowdfunding-main</artifactId>
+  <packaging>war</packaging>
+  <name>atcrowdfunding-main</name>
+  <description>众筹的主程序，程序的入口</description>
+  <parent>
+  	<groupId>com.atguigu.atcrowdfunding</groupId>
+  	<artifactId>atcrowdfunding-parent</artifactId>
+  	<version>0.0.1-SNAPSHOT</version>
+  	<relativePath>../atcrowdfunding-parent/pom.xml</relativePath>
+  </parent>
+  <dependencies>
+		  <dependency>
+		  	<groupId>com.atguigu.atcrowdfunding</groupId>
+		  	<artifactId>atcrowdfunding-manager-impl</artifactId>
+		  	<version>0.0.1-SNAPSHOT</version>
+		  </dependency>
+		  
+		  
+		  <dependency>
+          	  <groupId>org.springframework</groupId>
+	          <artifactId>spring-test</artifactId>
+	          <scope>test</scope>
+       	  </dependency>
+			<dependency>
+	          <groupId>junit</groupId>
+	          <artifactId>junit</artifactId>
+	          <scope>test</scope>
+       		</dependency>
+			
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-webmvc-portlet</artifactId>
+			</dependency>
+			<!-- 依赖的WEB类库 -->
+			<dependency>
+				<groupId>javax.servlet.jsp</groupId>
+				<artifactId>jsp-api</artifactId>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>javax.servlet</groupId>
+				<artifactId>servlet-api</artifactId>
+				<!-- 目标环境已经有了 -->
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>javax.servlet</groupId>
+				<artifactId>jstl</artifactId>
+			</dependency>
+			<!-- 依赖的日志包 -->
+			<dependency>
+				<groupId>org.springframework.security</groupId>
+				<artifactId>spring-security-web</artifactId>
+				<version>4.2.10.RELEASE</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.security</groupId>
+				<artifactId>spring-security-config</artifactId>
+				<version>4.2.10.RELEASE</version>
+			</dependency>
+			<!-- 标签库 -->
+			<dependency>
+				<groupId>org.springframework.security</groupId>
+				<artifactId>spring-security-taglibs</artifactId>
+				<version>4.2.10.RELEASE</version>
+			</dependency>
+		
+			
+		 
+			  
+  </dependencies>
+  
+  
+</project>
